@@ -1,0 +1,206 @@
+/*
+
+*/
+
+/*Sound Boxes */
+*{
+	box-sizing: border-box;
+}
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+ main h4{
+      font-size: 30px;
+    }
+    .sound-box{  
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 8px;
+      padding: 5px;
+      background: #006666;
+      height: auto;
+      display: inline-block;
+    }
+
+    
+ .sound-box img{
+        display: none; 
+      }
+    .col-sm-12{
+    	
+    	width: 100%;
+    }
+       .sound-box button{
+        display: inline;
+        position: static;
+        float: right;
+      }
+
+    @media (min-width: 768px){
+       .sound-box img{
+        display: none; 
+      }
+      .sound-box button{
+        display: inline;
+        position: static;
+        float: right;
+      }
+      .col-sm-12{
+      	width: 100%;
+      }
+    }
+    @media (min-width: 1200px){
+    .col-lg-4{
+    	position: relative;
+    	width: 33%;
+    }
+    .sound-box img{
+    	display: block;
+      float: right;
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+    }
+        .sound-box button{
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      
+    }
+
+}
+
+
+    .sound-box > .sound-title{
+      display: inline;
+      text-align: left;
+      /*padding: 5px;*/
+      font-size: 24px;
+      color: white;
+      font-family: monospace;
+      text-transform: uppercase;
+    }
+
+    .container-fluid{
+      width: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+/* Header */
+header{
+	background: rgba(255, 100, 100, 0.8);
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 40px;
+}
+
+.header-title{
+	position: absolute;
+	margin-left: 50px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.drop-content{
+	position: absolute;
+	display: none;
+	width: auto;
+
+	z-index: 1000;
+
+}
+
+.drop:hover .drop-content{
+	display: block;
+}
+.drop-content a{
+	display: block;
+	height: 40px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	text-align: center;
+	color: white;
+	border-radius: 8px;
+	font-size: 20px;
+	width: 160px;
+	padding-top: 4px;
+	background-color: orange;
+	text-decoration: none;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+.drop-content a:hover{
+	color: #56d4ff;
+	background-color: #e8a322;
+}
+.drop-content a.disabled{
+	color: #56d4ff;
+	background-color: #e8a322;
+}
+.drop-base{
+	font-family: sans-serif;
+	margin-top: 2px;
+	height: 36px;
+	width: auto;
+	font-size: 20px;
+	border-radius: 8px;
+	width:160px;
+
+}
+.drop{
+	position: relative;
+	left: 50%;
+	top: 0px;
+	width: 160px;
+	margin: 0px 10px 0px 10px;
+	display: inline-block;
+}
+
+/* Header css ends here*/
+
+/*Footer */
+footer{
+	height: 200px;
+	width: 100%;
+	display: table;
+	background: rgba(255, 100, 100, 0.8);
+	padding: 30px 20px 10px 20px;
+}
+
+footer h4{
+	display: table-header-group;
+	position: relative;
+}
+
+.footer-col-1-5{
+	display:table-cell;
+	width: 18%;
+	position: inherit;
+	float: top;
+	height: 200px;
+}
+
+/* Footer css ends here*/
+
+/*Body */
+body{
+	background: rgba(140, 0, 0, 0.8);
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+main{
+     		margin: 5px 0 5px 0;
+     		padding: 30px 10px 30px 10px;
+     		background-color: rgba(255,255,255,0.7);
+     		border-style: solid;
+     		border-width: 2px;
+     	}

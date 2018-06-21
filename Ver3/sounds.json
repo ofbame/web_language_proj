@@ -1,0 +1,153 @@
+{
+	"boards": [{
+		"title":"Anti Mage",
+		"sounds": [
+			{
+				"tileName":"A Dissapointment",
+				"soundFile":"sounds/am-1.mp3",
+				"imageFile":"images/am-1.jpg"
+			},
+			{
+				"tileName":"Blink Dagger?",
+				"soundFile":"sounds/am-2.mp3",
+				"imageFile":"images/am-2.jpg"
+			},
+
+			{
+				"tileName":"Crummy Wizard",
+				"soundFile":"sounds/am-3.mp3",
+				"imageFile":"images/am-3.jpg"
+			},
+
+			{
+				"tileName":"What Magic is This?",
+				"soundFile":"sounds/am-4.mp3",
+				"imageFile":"images/am-4.png"
+			},
+
+			{
+				"tileName":"Double Down",
+				"soundFile":"sounds/am-5.mp3",
+				"imageFile":"images/am-5.png"
+			},
+
+			{
+				"tileName":"Magic is an Abomination",
+				"soundFile":"sounds/am-6.mp3",
+				"imageFile":"images/am-6.jpg"
+			},
+
+			{
+				"tileName":"Not Time Yet",
+				"soundFile":"sounds/am-7.mp3",
+				"imageFile":"images/am-7.jpg"
+			},
+
+			{
+				"tileName":"Shitty Wizard",
+				"soundFile":"sounds/am-8.mp3",
+				"imageFile":"images/am-8.jpg"
+			},
+
+			{
+				"tileName":"Thou Payest",
+				"soundFile":"sounds/am-9.mp3",
+				"imageFile":"images/am-9.jpg"
+			},
+
+			{
+				"tileName":"Cabal",
+				"soundFile":"sounds/am-10.mp3",
+				"imageFile":"images/am-10.jpg"
+			},
+
+			{
+				"tileName":"Vile Creatures",
+				"soundFile":"sounds/am-11.mp3",
+				"imageFile":"images/am-11.jpg"
+			},
+
+			{
+				"tileName":"Spawn of Sorcery",
+				"soundFile":"sounds/am-12.mp3",
+				"imageFile":"images/am-12.jpg"
+			}
+		]
+	},
+	{
+		"title":"Storm Spirit",
+		"sounds": [
+			{
+				"tileName":"A Hurricane",
+				"soundFile":"sounds/ss-1.mp3",
+				"imageFile":"images/ss-1.png"
+			},
+
+			{
+				"tileName":"What'd I Miss?",
+				"soundFile":"sounds/ss-2.mp3",
+				"imageFile":"images/ss-2.jpg"
+			},
+
+			{
+				"tileName":"Handsome Devil",
+				"soundFile":"sounds/ss-3.mp3",
+				"imageFile":"images/ss-3.jpg"
+			},
+
+			{
+				"tileName":"Here I Am!",
+				"soundFile":"sounds/ss-4.mp3",
+				"imageFile":"images/ss-4.jpg"
+			},
+
+			{
+				"tileName":"Over Here Now!",
+				"soundFile":"sounds/ss-5.mp3",
+				"imageFile":"images/ss-5.jpg"
+			},
+
+			{
+				"tileName":"Coming Through!",
+				"soundFile":"sounds/ss-6.mp3",
+				"imageFile":"images/ss-6.jpg"
+			},
+
+			{
+				"tileName":"I'll Save This For Later",
+				"soundFile":"sounds/ss-7.mp3",
+				"imageFile":"images/ss-7.jpg"
+			},
+
+			{
+				"tileName":"Hahahahaha!",
+				"soundFile":"sounds/ss-8.mp3",
+				"imageFile":"images/ss-8.png"
+			},
+
+			{
+				"tileName":"Touché",
+				"soundFile":"sounds/ss-9.mp3",
+				"imageFile":"images/ss-9.jpg"
+			},
+
+			{
+				"tileName":"Over Here Now!",
+				"soundFile":"sounds/ss-10.mp3",
+				"imageFile":"images/ss-10.jpg"
+			},
+
+			{
+				"tileName":"Zaaaap",
+				"soundFile":"sounds/ss-11.mp3",
+				"imageFile":"images/ss-11.jpg"
+			},
+
+			{
+				"tileName":"Puddin' Pop!",
+				"soundFile":"sounds/ss-12.mp3",
+				"imageFile":"images/ss-12.jpg"
+			}
+		]
+	}]
+}

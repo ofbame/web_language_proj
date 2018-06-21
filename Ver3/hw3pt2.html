@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="scripts.jquery.js"></script>
+
+    <title>
+       Red Team Soundboard
+    </title>
+
+</head>
+<body>
+  <header>
+         <p class="header-title">
+            Team Red
+         </p>
+         <!-- Theme Dropdown -->
+        <div class="drop">
+          <button class="drop-base">
+            Theme
+          </button>
+          <div class="drop-content">
+            <a id="light-theme">Light</a>
+            <a id="dark-theme">Dark</a>
+          </div>
+        </div>
+
+         <!-- Content Dropdown -->
+         <div class="drop">
+          <button class="drop-base">
+            Sounds
+          </button>
+          <div class="drop-content">
+            <a id="antimage-sounds">Anti Mage</a>
+            <a id="stormspirit-sounds">Storm Spirit</a>
+          </div>
+        </div>
+
+        <div class="drop">
+          <button id="toggle-compact" class="drop-base">
+            Compact
+          </button>
+        </div>
+
+      </header>
+  <main>
+    <h4>Sound Board By Team Red - jQuery Edition</h4>
+
+    <template id="soundtile-template">
+      <div class="sound-box col-lg-4 col-sm-12">
+          <div class="sound-title"></div>
+          <img class="sound-image" src="" />
+          <audio src=""></audio>
+          <button class="btn">Play</button>
+      </div>
+    </template>
+
+    <div class="container-fluid">
+
+    </div>
+  </main>
+
+  <footer>
+    <h4>Team Red</h4>
+    <p>&copy 2017</p>
+  </footer>
+</body>
+</html>
