@@ -1,0 +1,244 @@
+
+/*Sound Boxes */
+*{
+  box-sizing: border-box;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+main h4 {
+      font-size: 30px;
+
+}
+
+.sound-box {  
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 5px;
+  height: auto;
+  display: inline-block;
+}
+
+.rich {
+  height: 250px;
+  width: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.compact {
+  height: 10%;
+  width: auto;
+}
+
+.col-sm-12{
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .col-sm-12{
+    width: 100%;
+  }
+}
+@media (min-width: 1200px){
+  .col-lg-4{
+    position: relative;
+    width: 33%;
+  }
+}
+
+.sound-box > .sound-title{
+  display: inline;
+  text-align: left;
+  /*padding: 5px;*/
+  font-size: 24px;
+  color: white;
+  font-family: monospace;
+  text-transform: uppercase;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.container-fluid{
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Header */
+header{
+  background: rgba(255, 100, 100, 0.8);
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+}
+
+.header-title{
+  position: absolute;
+  display: inline-block;
+  margin-left: 50px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.drop-content{
+  /*position: absolute;*/
+  display: none;
+  width: 100%;
+
+  z-index: 1000;
+
+}
+
+.drop:hover .drop-content{
+  display: block;
+}
+.drop-content a{
+  display: block;
+  height: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  width: auto;
+  padding-top: 4px;
+  background-color: orange;
+  text-decoration: none;
+  box-sizing: border-box;
+  line-height: 1.5;
+  white-space: normal;
+}
+.drop-content a:hover{
+  color: #56d4ff;
+  background-color: #e8a322;
+}
+.drop-content a.disabled{
+  color: #56d4ff;
+  background-color: #e8a322;
+}
+.drop-base{
+  font-family: sans-serif;
+  margin-top: 2px;
+  height: 36px;
+  width: auto;
+  font-size: 12px;
+  border-radius: 8px;
+  width: 100%;
+
+}
+.drop{
+  float: right;
+  width: 20%;
+  margin: 0px 10px 0px 10px;
+  display: inline-block;
+}
+
+.drop-container{
+  width: 70%;
+  display: inline-block;
+  white-space: nowrap;
+  float: right;
+}
+
+@media (min-width: 768px){
+  .drop-base{
+    font-size: 20px;
+  }
+
+  .drop-content a{
+    font-size: 20px;
+  }
+}
+
+/* Header css ends here*/
+
+/*Overlay*/
+
+#sound-overlay {
+  height: 50px;
+  width: 120%;
+  position: fixed;
+  display: table;
+  bottom: 0%;
+  margin-left: -20px;
+}
+
+#progress-bar {
+  height: 50px;
+  width: 0;
+  background-color: #123;
+  position: fixed;
+  display: table;
+  bottom: 0%;
+  z-index: -1;
+}
+
+#sound-playing {
+  float: left;
+  padding-left: 20px;
+  color: white;
+  position: fixed;
+}
+
+#offline-flag {
+  color: white;
+  float: right;
+  padding-right: 20%;
+}
+/*Overlay css ends here*/
+
+/*Footer */
+footer{
+  height: 200px;
+  width: 100%;
+  display: table;
+  background: rgba(255, 100, 100, 0.8);
+  padding: 30px 20px 10px 20px;
+}
+
+footer h4{
+  display: table-header-group;
+  position: relative;
+}
+
+.footer-col-1-5{
+  display:table-cell;
+  width: 18%;
+  position: inherit;
+  float: top;
+  height: 200px;
+}
+
+/* Footer css ends here*/
+
+/*Body */
+body{
+  background: rgba(140, 0, 0, 0.8);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+main{
+        margin: 5px 0 5px 0;
+        padding: 30px 10px 30px 10px;
+        background-color: rgba(255,255,255,0.7);
+        border-style: solid;
+        border-width: 2px;
+      }

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="theme-color" content="#444444">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="scripts.js"></script>
+
+    <title>
+       Red Team Soundboard
+    </title>
+
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/sw.js', { scope: '/'})
+                 .then(function(registration) { 
+                    console.log("Service Worker Registered"); 
+                    var serviceWorker;
+                    if (registration.installing) {
+                        serviceWorker = registration.installing;
+                        //document.querySelector('#kind').textContent = 'installing';
+                    } else if (registration.waiting) {
+                        serviceWorker = registration.waiting;
+                        //document.querySelector('#kind').textContent = 'waiting';
+                    } else if (registration.active) {
+                        serviceWorker = registration.active;
+                        //document.querySelector('#kind').textContent = 'active';
+                    }
+                  })
+                 .catch(function() { console.log("Service Worker registration failed.")});
+      }
+    </script>
+    <noscript>
+    Your browser does not support JavaScript, and many features of this site are disabled.
+    </noscript>
+
+</head>
+<body>
+  <header>
+         <p class="header-title">
+            Team Red
+         </p>
+         <!-- Theme Dropdown -->
+      <div class="drop-container">
+        <div class="drop">
+          <button class="drop-base">
+            Theme
+          </button>
+          <div class="drop-content">
+            <a id="light-theme">Light</a>
+            <a id="dark-theme">Dark</a>
+          </div>
+        </div>
+
+         <!-- Content Dropdown -->
+         <div class="drop">
+          <button class="drop-base">
+            Sounds
+          </button>
+          <div class="drop-content">
+            <a id="antimage-sounds">Anti Mage</a>
+            <a id="stormspirit-sounds">Storm Spirit</a>
+          </div>
+        </div>
+
+         <!-- Form Dropdown -->
+        <div class="drop">
+          <button class="drop-base">
+            Form
+          </button>
+          <div class="drop-content">
+            <a id="rich-form">Rich</a>
+            <a id="compact-form">Compact</a>
+          </div>
+        </div>
+      </div>
+      </header>
+  <main>
+    <h4 id="soundboard-title">Sound Board By Team Red - Vanilla JS Edition </h4>
+    <p>Click an image to play the sound!</p>
+    <noscript>Your browser does not support JavaScript, and many features of this site are disabled.</noscript>
+
+    <template id="soundtile-template">
+      <div class="sound-box rich col-lg-4 col-sm-12">
+          <div class="sound-title"></div>
+          <audio src=""></audio>
+      </div>
+    </template>
+
+    <div class="container-fluid">
+
+    </div>
+  </main>
+
+  <section id="sound-overlay">
+
+      <h4 id="sound-playing">Currently Playing:</h4>
+      <p id="offline-flag"></p>
+        <div id="progress-bar"></div>
+  </section>
+
+  <footer>
+    <h4>Team Red</h4>
+    <p>&copy; 2017</p>
+  </footer>
+</body>
+</html>
